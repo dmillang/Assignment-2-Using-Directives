@@ -1,3 +1,7 @@
 <button class="btn btn-primary" (click)="onClick()">Display Details</button>
 <p *ngIf='buttonClicked'>Secret Password = frosties</p>
-<div [ngClass]="{blueBackground: click >= 5}" *ngFor ="let click of clicks">{{ click }}</div>
+<div
+    [ngClass]="{blueBackground: i >= 4}" 
+    *ngFor ="let click of clicks; let i = index">
+        {{ click }}
+</div>

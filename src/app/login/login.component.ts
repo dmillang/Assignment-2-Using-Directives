@@ -17,7 +17,8 @@ export class LoginComponent implements OnInit {
 
   onClick() {
     this.buttonClicked = !this.buttonClicked;
-    this.clicks.push(this.clicks.length + 1);
+    // this.clicks.push(this.clicks.length + 1);
+    this.clicks.push(new Date());
   }
 
 }
